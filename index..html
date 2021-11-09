@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <title>Crud</title>
+    <link rel="icon" href="imgs/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="top">
+        <i class="icon fab fa-cuttlefish"></i>
+        <i class="icon far fa-registered"></i>
+        <i class="icon fab fa-uniregistry"></i>
+        <i class="icon fab fa-dyalog"></i>
+    </header>
+    <div class="second-header">
+        <h5>Product Store</h5>
+    </div>
+    <!--------------------------- SYSTEM SECTION ---------------------------------------------------->
+    <div id="system" class="w-75 m-auto my-4">
+        <div class=" mb-3">
+            <label for="productName" class="mb-2">Product Name<span> *</span></label>
+            <input type="text" class="form-control valid" id="productName">
+            <small class="d-none" id="nameAlert">Product Name must start with capital letter and contains minimum 3
+                letters, Can't contain special characters</small>
+        </div>
+        <div class="mb-3">
+            <label for="productCateg" class="mb-2">Product Category<span> *</span></label>
+            <input type="text" class="form-control" id='productCateg'>
+            <small class="d-none" id="categAlert">Product Category must contain minimum 5 letters, Can't contain special
+                characters</small>
+        </div>
+        <div class=" mb-3">
+            <label for="productPrice" class="mb-2">Product Price<span> *</span></label>
+            <input type="number" class="form-control" id="productPrice">
+            <small class="d-none" id="priceAlert">Product Price must be in range 100 : 10,000 (Numbers Only)</small>
+        </div>
+        <div class="mb-3">
+            <label for="productDesc" class="mb-2">Product Description<span> *</span></label>
+            <textarea class="form-control" id="productDesc"></textarea>
+            <small class="d-none" id="descAlert">Product Description must contain minimum 3 letters, Can't contain
+                special characters</small>
+        </div>
+        <div class="mb-3 text-center my-5">
+            <button disabled class="addProduct">Add Product</button>
+        </div>
+    </div>
+    <!--------------------------- PRODUCT DISPLAY ---------------------------------------------------->
+    <div id="crud-table" class="p-5 w-75 m-auto">
+        <div id="search" class="input-group w-75 m-auto mb-3">
+            <input id="search-input" type="text" class="form-control" placeholder=" Search Product..."
+                aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <p> &nbsp;</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

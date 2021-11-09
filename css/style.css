@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.top {
+  height: 20vh;
+  background-image: linear-gradient(to left, rgb(6 147 195), #0c3f54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.top .icon {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+/*************************************** SECOND HEADER *********************************************************/
+.second-header {
+  background-color: rgb(205, 231, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-header h5 {
+  color: #06577a;
+  font-weight: 400;
+}
+/*************************************** SYSTEM SECTION *********************************************************/
+#system {
+  padding: 2rem 1rem;
+  box-shadow: 0px 3px 12px 0px #cdc9c9;
+}
+
+#system span {
+  color: crimson;
+}
+
+#system small{
+  color: crimson;
+}
+
+#system button {
+  background-color: #06577a;
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  border: 1px solid #06577a;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+
+#system button:hover {
+  background-color: #fff;
+  color: #06577a;
+}
+/*************************************** DISPLAY SECTION *********************************************************/
+#crud-table {
+  box-shadow: 0px 3px 12px 0px #cdc9c9;
+  overflow-x: hidden;
+}
+
+#crud-table #search {
+  position: relative;
+}
+
+#crud-table span {
+  background-color: #06577a;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.table {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.table thead {
+  background-image: linear-gradient(to left, rgb(6 147 195), #0c3f54);
+  color: #fff;
+}
+
+.table thead th {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.table tbody #update {
+  color: #008e9d;
+  cursor: pointer;
+}
+
+.table tbody #delete {
+  color: rgb(116, 3, 3);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #crud-table {
+    width: 100% !important;
+  }
+}
